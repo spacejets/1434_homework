@@ -7,9 +7,7 @@ public class Main {
         int[] et = {1, 2, 3, 4, 6};
         for (int i = 0; i < et.length; i++)
             if (et[i] == 5){
-                System.out.println("yes");
-                break;}
-    else {System.out.println("no");
-    break;}
+                System.out.println("yes");}
+    else {System.out.println("no");}
     }
 }
