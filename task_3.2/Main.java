@@ -15,18 +15,12 @@
 
 public class Main {
     public static int min(int a, int b, int c, int d) {
-        if (a < b && a<c && a<d)
-        return a;
-        if (b < a && b<c && b<d)
-        return b;
-        if ( c<a && c<b && c<d)
-        return c;
-        else return d;
-    }
+        return (min(min(a,b),min(c,d)));}
+
 
     public static int min(int a, int b) {
         if (a < b)
-        return a;
+            return a;
         else return b;
 
     }
@@ -39,5 +33,3 @@ public class Main {
         System.out.println(min(-20, -10, -30, -40));
     }
 }
-
-
