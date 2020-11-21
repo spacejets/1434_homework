@@ -5,13 +5,11 @@
 
 public class Main {
     public static void main(String[] args) {
-    int a = 125;
-    int b = 125;
-    if (a==b)
-
-        System.out.println("true");
-    else
-        System.out.println("false");
+        System.out.println(nums(5, 8));
 
     }
-}
+            public static boolean nums(int a, int b) {
+                if (a == b)
+                 return true;
+                else return false;
+    }}
