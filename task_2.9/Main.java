@@ -4,10 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] et = {1, 2, 3, 4, 6};
-        for (int i = 0; i < et.length; i++)
-            if (et[i] == 5){
-                System.out.println("yes");}
-    else {System.out.println("no");}
+        int[] et = {1, 2, 3, 4,6,5,};
+        for (int i = 0; i < et.length; i++){
+            if (et[i] == 5) {
+                System.out.println("yes"); break;}
+
+        else if (i==et.length-1) {System.out.println("no");}
     }
-}
+}}
