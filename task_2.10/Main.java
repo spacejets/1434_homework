@@ -7,10 +7,13 @@ public class Main {
     public static void main(String[] args) {
         boolean a = false;
         int num [] = {1, 2, 3, 4, 5, 6, 6};
-        for (int i = 0; i < num.length-1; i++) {
-            for (int j = i + 1; j < num.length; j++) {
-                if (num[i] == num[j]) a = true;
+        for (int i = 1; i < num.length; i++) {
+                if (num[i] == num[i-1]) 
+                {a = true; break;
             }
         }
-        if (a) System.out.println("да");
-        else Syste
+        if (a==true) System.out.println("да");
+        else System.out.println("нет");}
+}
+
+       
