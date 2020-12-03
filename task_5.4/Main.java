@@ -1,4 +1,3 @@
-/*
  * Задание: Дана коллекция с числами. Запишите в новую коллекцию только те числа, которые больше нуля и меньше 10-ти.
  * Коллекции вы создаёте сами
  */
@@ -24,6 +23,7 @@
 
 
 
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,11 +31,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException{
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Введите путь к файлу:");
-        String test = scan.nextLine();
-        FileReader reader  = new FileReader(test);
+    public static void main(String[] args){
+        try {
+        FileReader reader  = new FileReader("C://java/test.txt");
         Scanner scanFileReader = new Scanner(reader);
         ArrayList<Integer> nums = new ArrayList<>();
         String nextLine="";
@@ -47,6 +45,7 @@ public class Main {
             if (nextInt % 2 == 0 ) nums.add(nextInt);}
         reader.close();
         Collections.sort(nums);
-        nums.forEach(System.out::println);
-    }
-}
+        System.out.println(nums);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }}}
