@@ -13,15 +13,10 @@
 
 public class Main {
     public static void main(String[] args) {
-       String a = "мама";
-       String b = "мыла";
-       String c = "раму";
-        System.out.println(a+b+c);
-        System.out.println(a+c+b);
-        System.out.println(b+a+c);
-        System.out.println(b+c+a);
-        System.out.println(c+a+b);
-        System.out.println(c+b+a);
-
-    }
-}
+        String rama[] = {"мама","мыла","раму"};
+        for (int i = 0; i < rama.length ; i++) {
+            for (int j = 0; j < rama.length ; j++) {
+                for (int k = 0; k < rama.length ; k++) {
+                    if(i!=j & i!=k & j!=k)
+                    System.out.println(rama[i]+rama[j]+rama[k]);
+                }}}}}
