@@ -8,9 +8,8 @@ public class Main {
         int a = scan.nextInt();
         System.out.println("Введите процентную ставку: ");
         int b = scan.nextInt();
-        int p = a*b/100;
         for (int i = 0; i < 5; i++) {
-            a+=p;
-            System.out.println("размер вклада: " + a + "руб.");
+            a+=a*b/100;
+            System.out.println("размер вклада за " +i+" год : " + a + "руб.");
         }}
 }
